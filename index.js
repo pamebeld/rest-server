@@ -8,7 +8,7 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-// Setttings
+// Settings
 app.set('port', process.env.PORT || 3000);
 // Routes
 app.use(require('./routes/user.routes'));
